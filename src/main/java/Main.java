@@ -6,8 +6,8 @@ public class Main {
     public static void main(String[] args) {
         TaskReader reader = new TaskReader("input.txt");
         TaskWriter writer = new TaskWriter("output.txt");
-        LewensteinLength lewensteinLength = new LewensteinLength();
-        TaskSolver solver = new TaskSolver(reader, writer, lewensteinLength);
+        EditDistance editDistance = new LewensteinDistance();
+        TaskSolver solver = new TaskSolver(reader, writer, new PairsMatcher(editDistance));
         try {
             solver.solve();
         } catch (Exception e) {
