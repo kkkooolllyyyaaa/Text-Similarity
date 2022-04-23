@@ -1,4 +1,4 @@
-# Lewenstein Distance Algorithm Realisation
+# Lewenstein Distance Algorithm
 
 ## Task Description ##
 
